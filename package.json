@@ -1,14 +1,20 @@
 {
-  "name": "sketchybar-app-font",
-  "version": "1.0.0",
-  "description": "App font for sketchybar, bootstrapped using SVGs from simple-bar",
-  "scripts": {
-    "build": "svgtofont -s svgs/ -o dist/ && ./generate_icon_map_fn.sh"
-  },
-  "keywords": [],
-  "author": "Kevin Dreßler",
-  "license": "MIT",
-  "devDependencies": {
-    "svgtofont": "^3.17.8"
-  }
+    "name": "sketchybar-app-font",
+    "version": "1.0.0",
+    "description": "App font for sketchybar, bootstrapped using SVGs from simple-bar",
+    "scripts": {
+        "build": "svgtofont -s svgs/ -o dist/ && ./generate_icon_map_fn.sh"
+    },
+    "keywords": [],
+    "author": "Kevin Dreßler",
+    "license": "MIT",
+    "devDependencies": {
+        "svgtofont": "^3.17.8"
+    },
+    "svgtofont": {
+        "fontName": "sketchybar-app-font",
+        "css": false,
+        "emptyDist": true,
+        "useNameAsUnicode": true
+    }
 }
